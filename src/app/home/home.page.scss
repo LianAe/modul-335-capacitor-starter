@@ -1,15 +1,6 @@
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      /* Dark mode variables go here */
-      --ion-background-color: #ffffff;
-    }
-    
-  
-  
-  /* Fallback for older browsers or manual mode */
-  body.dark {
-    /* Dark mode variables go here */
-    --ion-background-color: #ffffff;
-}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ion-background-color: #FFF;
+  }
 }

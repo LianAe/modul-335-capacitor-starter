@@ -1,0 +1,6 @@
+{
+	"appId": "ch.ictbz.capacitorstarter",
+	"appName": "Capacitor Starter",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

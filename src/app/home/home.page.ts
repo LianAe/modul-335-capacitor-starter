@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Plugins } from '@capacitor/core';
-
-const { Clipboard } = Plugins;
-const { Toast } = Plugins;
+import { Clipboard } from '@capacitor/clipboard';
+import { Toast } from '@capacitor/toast';
 
 @Component({
   selector: 'app-home',
@@ -26,7 +24,7 @@ export class HomePage implements OnInit {
     }).then(() => {
       this.showToast("Text copied to clipboard!");
       this.inputText = "";
-    })
+    });
   }
 
   async showToast(msg:string) {
