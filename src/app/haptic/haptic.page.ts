@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Haptics, ImpactStyle } from '@capacitor/haptics';
+
 
 @Component({
   selector: 'app-haptic',
@@ -11,5 +13,13 @@ export class HapticPage implements OnInit {
 
   ngOnInit() {
   }
+
+  const hapticsImpactMedium = async () => {
+    await Haptics.impact({ style: ImpactStyle.Medium });
+  };
+
+  const hapticsVibrate = async () => {
+    await Haptics.vibrate();
+  };
 
 }
